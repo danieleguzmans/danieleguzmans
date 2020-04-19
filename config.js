@@ -1,6 +1,6 @@
-if(process.ENV === 'PROD'){
-    DATABASE_URL = process.ENV.DATABASE_URL,
-    PORT = process.ENV.PORT
+if(process.env.NODE_ENV === 'production'){
+    DATABASE_URL = process.env.DATABASE_URL,
+    PORT = process.env.PORT
 }else{
     DATABASE_URL = 'mongodb://localhost/angular-auth',
     PORT = 3000
